@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./index.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/> -->
+        <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
+        <script src="index.js"></script>
+        <title>Store Feature</title>
+    </head>
+    <body>
+        <div id='ui'>
+            <div id='pc'>
+                PassCount
+                <span id='Pass_count_value'>0</span>
+            </div>
+            <div id='bucket'>
+                Bucket Weight
+                <span id='Bucket_weight_value'>0</span>
+            </div>
+            <div id='payload'>
+                Truck payload
+                <span id='Truck_payload_value'>0</span>
+            </div>
+            <button id='store' disabled onclick="jane()">STORE</button>
+            <br>  
+            <label for="target">Enter target weight : </label>
+                <input type="number" id="target"><br>
+                <button onclick="display()" id='sub'>Submit</button>
+              <br>
+              <span id="display"></span>
+              <table border = "1px" align = "center" id = "tbd">
+                <thead>
+                <tr>
+                <th>S.No</th>
+                <th>PassCount</th>
+                <th>TruckLoad</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+            <!-- <button id='add' onclick="document.getElementById('add').style.display='none'">ADD</button> -->
+        </div>
+        <div id="result"></div>
+    </body>
+
+</html>
